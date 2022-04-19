@@ -5,9 +5,7 @@
  *  Author: kunal Avghade
  */ 
 
-
-#ifndef ADC_H_
-#define ADC_H_
+#include <avr/io.h>
 
 void acd_init()
 {
@@ -35,5 +33,3 @@ unsigned int getTemp(uint8_t channel)
 {
  return ((analogRead(channel)*4.88)/10.00);
 }
-
-#endif /* ADC_H_ */

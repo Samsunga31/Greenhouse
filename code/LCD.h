@@ -6,8 +6,8 @@
  */ 
 
 
-#ifndef LCD_H_
-#define LCD_H_
+#include <avr/io.h>
+#include<util/delay.h>
 
 void lcd_cmd(unsigned char cmd)
 {
@@ -57,5 +57,3 @@ void lcd_print(unsigned char row, unsigned char col, char *msg)
 	}
 		
 }
-
-#endif /* LCD_H_ */
